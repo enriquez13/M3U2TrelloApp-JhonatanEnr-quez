@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="shortcut icon" href="assets/trello.svg" type="image/x-icon">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="header">
+            <img class="img" src="logo.jpg" width="46px">
+            <button class="button-creartarea" button-primary>Crear nueva tarea</button>
+        </div>
+    </header>
+    <!-- Fin encabezado -->
+<!-- Columnas -->
+    <main>
+        <div class="container-1">
+            <section>
+                <h1 class="container-2">Tarea por hacer</h1>
+                <div class="container-3"></div>
+            </section>
+
+            <section>
+                <h1 class="container-2">Tarea en progreso</h1>
+                <div class="container-3"></div>
+            </section>
+
+            <section>
+                <h1 class="container-2">Tarea finalizada</h1>
+                <div class="container-3"></div>
+            </section>
+        </div>
+    </main>
+<!-- Fin Columnas -->
+<!-- Nueva Tarea -->
+    <aside class="menu">
+        <div>
+            <div>
+                <h2>Nueva tarea</h2>
+                <form>
+                    <div class="menu-division">
+                        <label for="">Título</label>
+                        <input 
+                        type="text" 
+                        placeholder="Escribe un título descriptivo"
+                        >
+                    </div>
+
+                    <div class="menu-division">
+                        <label for="">Descripción</label>
+                        <input 
+                        type="text" 
+                        placeholder="Escribe la descripción"
+                        >
+                    </div>
+
+                    <div class="menu-division">
+                        <label for="">Responsable</label>
+                        <select name="" id="">
+                            <option value="">Seleccionar</option>
+                            <option value="User01">Usuario 01</option>
+                            <option value="User02">Usuario 02</option>
+                        </select>
+                    </div>
+
+                    <div class="menu-division">
+                        <label >Fecha de entrega</label>
+                        <select>
+                            <option value="">Seleccionar</option>
+                            <option value="OneDay">1 día</option>
+                            <option value="TwoDay">2 días</option>
+                            <option value="SevenDay">Una semana</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <div>
+                            <button class="button-2" type="submit">Guardar</button>
+                            <button class="button-2" type="reset" id="btnCancelNewtask">Cancelar</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </aside>
+<!-- Fin Nueva Tarea -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://momentjs.com/downloads/moment.js"></script>
+<script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/sortable.js"></script>
+
+<script src="js/api/requests.js"></script>
+<script src="js/hepers/dates.js"></script>
+<script src="js/hepers/toggleModal.js"></script>
+<script src="js/helpers/gesturesHammer.js"></script>
+<script src="js/helpers/dragganDrop.js"></script>
+<script src="js/helpers/newTask.js"></script>
+
+</body>
+</html>

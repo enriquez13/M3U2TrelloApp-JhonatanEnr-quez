@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(228, 228, 228);
+}
+h1{
+    font-size: 20px;
+}
+h2{
+    padding-top: 5px;
+    font-size: 18px;
+}
+label{
+    font-size: 14px;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(59, 59, 59);
+}
+.button-creartarea{
+    background-color:#3184a5;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    height: 43px;
+    width: 150px;
+    border-radius: 4px;
+    border: solid 0.5px;
+    border-color: rgb(41, 41, 41);
+    cursor: pointer;
+}
+.button-2{
+    background-color:#398cad;
+    margin-top: 5px;
+    height: 30px;
+    width: 70px;
+    border-radius: 4px;
+    border: solid 0.5px;
+    border-color: rgb(41, 41, 41);
+    cursor: pointer;
+}
+button:hover {
+    background: #2d7fa0;
+}
+.container-1{
+    /*background-color: aquamarine;
+    height: 600px;*/
+    margin: 0;
+    /*border: solid black;*/
+    display: flex;
+}
+.container-2{
+    font-family: sans-serif;
+    width: 300px;
+    height: 30px;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.container-3{
+    width: 300px;
+    height: 500px;
+    background: rgb(255, 255, 255);
+    margin-left: 20px;
+    border: solid  0.1px rgb(221, 221, 221);
+    text-align: center;
+    border-radius: 5px;
+}
+.menu{
+    background-color: #3592b8;
+    width: 300px;
+    height: 230px;
+    position: absolute;
+    top: 47px;
+    right: 0px;
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+.menu-division{
+    margin: 10px;
+}
