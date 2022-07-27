@@ -1,4 +1,4 @@
-body{
+/*body{
     background-color: rgb(228, 228, 228);
 }
 h1{
@@ -43,12 +43,12 @@ label{
 }
 button:hover {
     background: #2d7fa0;
-}
-.container-1{
-    /*background-color: aquamarine;
-    height: 600px;*/
+
+.container-1{ }
+    background-color: aquamarine;
+    height: 600px;
     margin: 0;
-    /*border: solid black;*/
+    border: solid black;
     display: flex;
 }
 .container-2{
@@ -82,4 +82,154 @@ button:hover {
 }
 .menu-division{
     margin: 10px;
+} */
+
+/*--------------------------------------------------*/
+.l-app{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.l-container{
+    width: 100%;
+    padding: 10px;
+}
+
+#modalNewTask{
+    color: rgb(255, 255, 255);
+}
+#btnNewTask{
+    color: #5e3131;
+}
+#btnCancelNewTask{
+    color: rgb(255, 255, 255);
+}
+.button{
+    color: red;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.button:active
+{
+    transform: scale(.9);
+    background-color: yellow;
+}
+.button.button-primary{
+    color: #3184a5;
+}
+.button.button-secundary.ghost{
+    
+    color: blueviolet;
+}
+
+
+.card-task{
+    box-shadow: #2d7fa0;
+}
+.card-task__title{
+    color: #b42796;
+}
+.card-task__responsible,
+.card-task__date
+{
+    color: #27b43f;
+}
+.card_task__responsible--tag-creator,
+.card_tast__date--tag-date
+{
+    color: #5e3131;
+}
+
+.form-new-task{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.row-form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-new-task__label{
+font-size: medium;
+}
+.form-new-task__input,
+select
+{
+padding: 10px;
+}
+.form-new-task__buttons
+{
+    display: flex;
+    gap: 50px;
+}
+.form-new-task__buttons
+button
+{
+flex: 1;
+}
+
+.aside-app{
+    position: fixed;
+    width: 100%;
+    max-width: 350px;
+    height: 100vh;
+    background-color: #2d7fa0;
+    transform: translate(100%);
+    will-change: transform;
+    transition:cubic-bezier(1, 0, 0, 1);
+    z-index: 1;
+}
+.aside-app.active{
+    transform: initial;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.aside-form-title{
+    color: #27b43f;
+}
+.header-app {
+    box-shadow: #5e3131;
+    background-color: #b42796;
+}
+.header-app,
+.header-app .l-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-app{
+    flex-direction: column;
+    background-color: aqua;
+}
+.main-app,
+.main-app .l-container
+{
+    flex: 1;
+    display: flex;
+    gap: 100px;
+}
+
+.section-app{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 300px;
+}
+.section-status-title
+{
+    color: brown;
+}
+.container-tasks
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
