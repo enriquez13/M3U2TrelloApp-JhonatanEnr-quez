@@ -107,19 +107,19 @@ button:hover {
 .button{
     color: red;
     cursor: pointer;
-    transition: all 0.5s ease-out;
+    transition: all 0.8s ease-out;
 }
 .button:active
 {
     transform: scale(.9);
-    background-color: yellow;
+    background-color: rgb(87, 146, 255);
 }
 .button.button-primary{
     color: #3184a5;
 }
 .button.button-secundary.ghost{
     
-    color: blueviolet;
+    color: rgb(49, 49, 49);
 }
 
 
@@ -127,29 +127,29 @@ button:hover {
     box-shadow: #2d7fa0;
 }
 .card-task__title{
-    color: #b42796;
+    color: #000000;
 }
 .card-task__responsible,
 .card-task__date
 {
-    color: #27b43f;
+    color: #12113f;
 }
 .card_task__responsible--tag-creator,
 .card_tast__date--tag-date
 {
-    color: #5e3131;
+    color: #1e1747;
 }
 
 .form-new-task{
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 10px;
 }
 .row-form
 {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
 }
 .form-new-task__label{
 font-size: medium;
@@ -162,7 +162,7 @@ padding: 10px;
 .form-new-task__buttons
 {
     display: flex;
-    gap: 50px;
+    gap: 10px;
 }
 .form-new-task__buttons
 button
@@ -174,15 +174,18 @@ flex: 1;
     position: fixed;
     width: 100%;
     max-width: 350px;
-    height: 100vh;
+    height: 55vh;
     background-color: #2d7fa0;
-    transform: translate(100%);
+    transform: translate(400%);
     will-change: transform;
-    transition:cubic-bezier(1, 0, 0, 1);
+    transition-duration: 0.5s;
     z-index: 1;
+    top: 65.5px;
 }
 .aside-app.active{
     transform: initial;
+    right: 0;
+    
 }
 .form-container{
     display: flex;
@@ -190,11 +193,11 @@ flex: 1;
     gap: 1px;
 }
 .aside-form-title{
-    color: #27b43f;
+    color: #ffffff;
 }
 .header-app {
     box-shadow: #5e3131;
-    background-color: #b42796;
+    background-color: #505050;
 }
 .header-app,
 .header-app .l-container
@@ -206,14 +209,14 @@ flex: 1;
 
 .main-app{
     flex-direction: column;
-    background-color: aqua;
+    background-color: rgb(150, 164, 243);
 }
 .main-app,
 .main-app .l-container
 {
     flex: 1;
     display: flex;
-    gap: 100px;
+    gap: 20px;
 }
 
 .section-app{
@@ -224,7 +227,7 @@ flex: 1;
 }
 .section-status-title
 {
-    color: brown;
+    color: rgb(0, 0, 0);
 }
 .container-tasks
 {
@@ -232,4 +235,19 @@ flex: 1;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background-color: #12113f;
+}
+
+.draggable-mirror{
+    z-index: 999;
+}
+.draggable-container--over article:not(.draggable-mirror) {
+    z-index: 0;
+}
+.draggable--over, .draggable-source--is-dragging {
+    border-color: yellow;
+    opacity: .4;
+}
+.draggable-container--over {
+    border: none;
 }
