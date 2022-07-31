@@ -85,65 +85,91 @@ button:hover {
 } */
 
 /*--------------------------------------------------*/
-.l-app{
+img{
+    width : 38px;
+    left: 3px;
+    position: absolute;
+}
+.l-body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: sans-serif
 }
 .l-container{
     width: 100%;
-    padding: 10px;
+    padding: 20px;
+}
+button{
+    cursor: pointer;
 }
 
-#modalNewTask{
-    color: rgb(255, 255, 255);
+.btnCreateTask{
+    background-color:#3184a5;
+    position: absolute;
+    align-items: center;
+    right: 5px;
+    height: 36px;
+    width: 150px;
+    border-radius: 4px;
+    border: solid 0.5px;
+    border-color: #3185a5;
 }
-#btnNewTask{
-    color: #5e3131;
+.btn-secundary{
+    color: rgb(214, 227, 243);
+    border-radius: 6px;
+    height: 25px;
+    border: none;
+    background-color: #2f7591;
+    margin-top: 8px;
 }
-#btnCancelNewTask{
-    color: rgb(255, 255, 255);
-}
-.button{
-    color: red;
-    cursor: pointer;
-    transition: all 0.8s ease-out;
-}
-.button:active
+.btnCreateTask:active
 {
     transform: scale(.9);
     background-color: rgb(87, 146, 255);
 }
-.button.button-primary{
-    color: #3184a5;
-}
-.button.button-secundary.ghost{
-    
-    color: rgb(49, 49, 49);
-}
-
-
-.card-task{
-    box-shadow: #2d7fa0;
-}
-.card-task__title{
+.card-title{
     color: #000000;
+    padding: 5px 0 5px 0;
+    font-size: 18px;
 }
-.card-task__responsible,
-.card-task__date
-{
-    color: #12113f;
+.card-task{
+    background-color: #ffffff;
+    box-shadow: 2px 3px rgb(183, 185, 190);
+    border-radius: 4px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 5px;
 }
-.card_task__responsible--tag-creator,
-.card_tast__date--tag-date
-{
-    color: #1e1747;
+h2.text-status-title, 
+h2.text-newTask{
+    font-size: 20px;
+    text-align: center;
 }
+#modalNewTask{
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .form-new-task{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 .row-form
 {
@@ -152,35 +178,38 @@ button:hover {
     gap: 0px;
 }
 .form-new-task__label{
-font-size: medium;
+font-size: 14px;
 }
 .form-new-task__input,
 select
 {
-padding: 10px;
+padding: 2px;
 }
 .form-new-task__buttons
 {
     display: flex;
-    gap: 10px;
+    gap: 30px;
+    flex: 1;
+    height: 8px;
 }
 .form-new-task__buttons
 button
 {
-flex: 1;
+    flex: 1;
 }
 
 .aside-app{
     position: fixed;
     width: 100%;
-    max-width: 350px;
-    height: 55vh;
-    background-color: #2d7fa0;
-    transform: translate(400%);
+    max-width: 300px;
+    height: 40vh;
+    background-color: #3592b8;
+    transform: translate(500%);
     will-change: transform;
-    transition-duration: 0.5s;
+    transition-duration: 0s;
     z-index: 1;
-    top: 65.5px;
+    top: 47px;
+    border-radius: 5px;
 }
 .aside-app.active{
     transform: initial;
@@ -192,15 +221,16 @@ flex: 1;
     flex-direction: column;
     gap: 1px;
 }
-.aside-form-title{
+.text-newTask{
     color: #ffffff;
 }
-.header-app {
-    box-shadow: #5e3131;
-    background-color: #505050;
+.header {
+    box-shadow: #746a6a;
+    background-color: rgb(59, 59, 59);
+    height: 7vh;
 }
-.header-app,
-.header-app .l-container
+.header,
+.header .l-container
 {
     display: flex;
     align-items: center;
@@ -209,7 +239,7 @@ flex: 1;
 
 .main-app{
     flex-direction: column;
-    background-color: rgb(150, 164, 243);
+    background-color: rgb(228, 228, 228);
 }
 .main-app,
 .main-app .l-container
@@ -225,7 +255,7 @@ flex: 1;
     gap: 10px;
     min-width: 300px;
 }
-.section-status-title
+.text-status-title
 {
     color: rgb(0, 0, 0);
 }
@@ -234,8 +264,8 @@ flex: 1;
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    background-color: #12113f;
+    max-width: 300px;
+    background-color: rgb(211, 211, 211);
 }
 
 .draggable-mirror{
@@ -245,7 +275,7 @@ flex: 1;
     z-index: 0;
 }
 .draggable--over, .draggable-source--is-dragging {
-    border-color: yellow;
+    border-color: rgb(124, 124, 124);
     opacity: .4;
 }
 .draggable-container--over {
