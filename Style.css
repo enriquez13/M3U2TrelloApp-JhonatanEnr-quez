@@ -139,7 +139,8 @@ button{
     border-radius: 4px;
     text-align: center;
     font-size: 15px;
-    margin-bottom: 5px;
+    margin: 5px 5px 0px 5px;
+    padding: 5px;
 }
 h2.text-status-title, 
 h2.text-newTask{
@@ -149,55 +150,6 @@ h2.text-newTask{
 #modalNewTask{
     color: rgb(255, 255, 255);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.form-new-task{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-.row-form
-{
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-}
-.form-new-task__label{
-font-size: 14px;
-}
-.form-new-task__input,
-select
-{
-padding: 2px;
-}
-.form-new-task__buttons
-{
-    display: flex;
-    gap: 30px;
-    flex: 1;
-    height: 8px;
-}
-.form-new-task__buttons
-button
-{
-    flex: 1;
-}
-
 .aside-app{
     position: fixed;
     width: 100%;
@@ -215,6 +167,36 @@ button
     transform: initial;
     right: 0;
     
+}
+.form-new-task{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.row-form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.form-new-task__label{
+font-size: 14px;
+}
+.form-new-task__input,
+select
+{
+padding: 2px;
+}
+.form-new-task__buttons
+{
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+.form-new-task__buttons
+button
+{
+    flex: 1;
 }
 .form-container{
     display: flex;
@@ -236,7 +218,6 @@ button
     align-items: center;
     justify-content: space-between;
 }
-
 .main-app{
     flex-direction: column;
     background-color: rgb(228, 228, 228);
@@ -248,7 +229,6 @@ button
     display: flex;
     gap: 20px;
 }
-
 .section-app{
     display: flex;
     flex-direction: column;
@@ -269,7 +249,7 @@ button
 }
 
 .draggable-mirror{
-    z-index: 999;
+    z-index: 99;
 }
 .draggable-container--over article:not(.draggable-mirror) {
     z-index: 0;
@@ -281,3 +261,8 @@ button
 .draggable-container--over {
     border: none;
 }
+.card-task__details,
+.card_task__responsible{
+    margin: 5px
+}
+
