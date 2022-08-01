@@ -4,7 +4,6 @@
             "id": 1,
             "title": "Cuántica",
             "person": "Usuario 01",
-            "details": "Resolver el átomo de hidrógeno.",
             "state": "to-do",
             "deadline": 1659793062,
             "created": 1658951329
@@ -13,7 +12,6 @@
             "id": 2,
             "title": "Electrodinámica",
             "person": "Usuario 02",
-            "details": "Calcular el potencial por medio del laplaciano en una esfera.",
             "state": "in-progress",
             "deadline": 1660030419,
             "created": 	1659044749
@@ -22,7 +20,6 @@
             "id": 2,
             "title": "Partículas",
             "person": "Usuario 03",
-            "details": "Obtener un lagrangiano consistente con el Modelo estándar.",
             "state": "done",
             "deadline": 1660238852,
             "created": 1659130549

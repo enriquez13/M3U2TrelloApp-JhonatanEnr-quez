@@ -21,19 +21,14 @@ const createTask = (task) => {
     taskResponsible.classList.add("card_task__responsible");
     taskResponsible.innerHTML = `<span class="card_task__responsible--tag-creator">Responsable:</span> ${task.person}`;
 
-    let taskDetails = document.createElement("p");
-    taskDetails.classList.add("card-task__details");
-    taskDetails.innerHTML = `<span class="card-task__details--task-details">Descripción:</span> ${task.details}`;
-
     let taskDate = document.createElement("p");
     taskDate.classList.add("card-task__date");
-    taskDate.innerHTML = `<span class="card-task__date--tag-date">Plazo:</span> ${dateFormat(
+    taskDate.innerHTML = `<span class="card-task__date--tag-date">Fecha de entrega:</span> ${dateFormat(
         task.deadline
     )}`;
 
     newTask.appendChild(taskTitle);
     newTask.appendChild(taskResponsible);
-    newTask.appendChild(taskDetails);
     newTask.appendChild(taskDate);
 
     let columnToDo = document.querySelector("#todoTasks");
